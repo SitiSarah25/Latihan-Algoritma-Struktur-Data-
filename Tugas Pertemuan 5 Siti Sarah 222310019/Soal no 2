@@ -2,20 +2,14 @@
 using namespace std;
 
 int main() {
-  int baris, kolom;
+  int baris;
   cout << "Contoh Program Perulangan" << endl;
   for (baris = 1; baris <= 10; baris++) {
-    for (kolom = 1; kolom <= 1; kolom++) {
-      cout << baris << " ";
-    }
-    cout << endl;
+    cout << baris << endl;
   }
   cout << endl;
   cout << "Perulangan Menurun" << endl;
   for (baris = 10; baris >= 1; baris--) {
-    for (kolom = 1; kolom >= 1; kolom--) {
-      cout << baris << " ";
-    }
-    cout << endl;
+    cout << baris << endl;
   }
 }
