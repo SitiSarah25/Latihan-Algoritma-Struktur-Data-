@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a, b, c;
+  cout << "~~  Program C++ Segitiga Bintang  ~~" << endl;
+  cout << "====================================" << endl;
+  cout << endl;
+  cout << "Input tinggi segitiga : ";
+  cin >> a;
+  cout << endl;
+
+  for (b = 1; b <= a; b++) {
+    for (c = 1; c <= b; c++) {
+      cout << " *";
+    }
+    cout << endl;
+  }
+  return 0;
+}
