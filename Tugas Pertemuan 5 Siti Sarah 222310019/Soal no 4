@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "~~  Program C++ Bilangan Prima  ~~" << endl;
+  cout << "==================================" << endl;
+  cout << endl;
+
+  int bil, i;
+  bool bil_prima = true;
+
+  cout << "Masukan Bilangan : ";
+  cin >> bil;
+
+  // 0 dan 1 bukan angka prima
+  if (bil == 0 || bil == 1) {
+    bil_prima = false;
+  } else {
+    for (i = 2; i <= bil / 2; i++) {
+      if (bil % i == 0) {
+        bil_prima = false;
+        break;
+      }
+    }
+  }
+
+  cout << endl;
+  if (bil_prima)
+    cout << "Termasuk bilangan PRIMA";
+  else
+    cout << "Bukan termasuk bilangan prima";
+
+  cout << endl;
+  return 0;
+}
