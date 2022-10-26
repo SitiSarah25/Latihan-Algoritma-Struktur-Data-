@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main() {
+  string kata;
+
+  cout << "Program C++ Menghitung Panjang Kata" << endl;
+  cout << "===================================" << endl;
+  cout << endl;
+
+  cout << "Masukan kata : ";
+  getline(cin, kata);
+
+  cout << "Panjang kata yang diinputkan adalah : " << kata.length();
+  return 0;
+}
