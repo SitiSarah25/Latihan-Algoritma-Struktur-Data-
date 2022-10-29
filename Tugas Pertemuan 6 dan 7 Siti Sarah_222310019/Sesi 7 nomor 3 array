@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int nilai[10] = {23, 6, 89, 12, 45, 67, 9, 90, 54, 30};
+  int max, min;
+  max = nilai[0];
+  min = nilai[0];
+  for (int a = 0; a < 10; a++) {
+    if (nilai[a] > max) {
+      max = nilai[a];
+    }
+    if (nilai[a] < min) {
+      min = nilai[a];
+    }
+  }
+  cout << "\nNilai terbesar adalah : " << max << endl;
+  cout << "Nilai terkecil adalah : " << min << endl;
+  return 0;
+}
