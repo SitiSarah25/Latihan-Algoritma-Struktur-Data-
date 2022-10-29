@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int nilai[10], i, bil, jumlah = 0;
+  cout << "Masukkan Banyaknya Bilangan = ";
+  cin >> i;
+  cout << endl;
+  for (int a = 0; a < i; a++) {
+    cout << "Masukkan Indeks ke-" << a << " = ";
+    cin >> nilai[a];
+  }
+  cout << endl << endl;
+  cout << "Deretan Bilangan = ";
+  for (int b = 0; b < i; b++) {
+    cout << nilai[b] << " ";
+  }
+  cout << endl;
+  cout << "\nMasukkan Bilangan yang akan dicari = ";
+  cin >> bil;
+  for (int c = 0; c < 10; c++) {
+    if (nilai[c] == bil) {
+      jumlah++;
+      cout << "Bilangan " << bil << " ditemukan sebanyak " << jumlah
+           << "\npada posisi ke = " << c;
+      break;
+    } else if (bil != 1 && bil != 4 && bil != 5 && bil != 6 && bil != 3) {
+      cout << "Bilangan tidak ditemukan ";
+      break;
+    }
+  }
+  return 0;
+}
