@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a[100][100], b[100][100], sum[100][100], i, j, k, l, m, n, o, jumlah = 0;
+  cout << "Masukkan jumlah baris matriks pertama : ";
+  cin >> l;
+  cout << "Masukkan jumlah kolom matriks pertama : ";
+  cin >> m;
+
+  cout << "Masukkan jumlah baris matriks kedua : ";
+  cin >> n;
+  cout << "Masukkan jumlah kolom matriks kedua : ";
+  cin >> o;
+
+  if (m != n) {
+    cout << "Matriks tidak dapat dikalikan satu sama lain \n";
+  } else {
+
+    cout << "Masukkan Matriks Pertama : " << endl;
+    for (i = 0; i < l; i++) {
+      for (j = 0; j < m; j++) {
+        cout << "Matriks a" << i + 1 << j + 1 << " : ";
+        cin >> a[i][j];
+      }
+    }
+    cout << "\nMasukkan Matriks Kedua : " << endl;
+    for (i = 0; i < n; i++) {
+      for (j = 0; j < o; j++) {
+        cout << "Matriks b" << i + 1 << j + 1 << " : ";
+        cin >> b[i][j];
+      }
+    }
+    cout << "\nHasil Penjumlahan Kedua Matriks : " << endl;
+    for (i = 0; i < l; i++) {
+      for (j = 0; j < m; j++) {
+        sum[i][j] = a[i][j] + b[i][j];
+        cout << sum[i][j] << "\t";
+      }
+      cout << endl;
+    }
+    cout << "\nHasil Pengurangan Kedua Matriks : " << endl;
+    for (i = 0; i < l; i++) {
+      for (j = 0; j < m; j++) {
+        sum[i][j] = a[i][j] - b[i][j];
+        cout << sum[i][j] << "\t";
+      }
+      cout << endl;
+    }
+    for (i = 0; i < l; i++) {
+      for (j = 0; j < o; j++) {
+        for (k = 0; k < n; k++) {
+          jumlah = jumlah + a[i][k] * b[k][j];
+        }
+        sum[i][j] = jumlah;
+        jumlah = 0;
+      }
+    }
+    cout << "\nHasil Perkalian Kedua Matriks : " << endl;
+    for (i = 0; i < l; i++) {
+      for (j = 0; j < o; j++) {
+        cout << sum[i][j] << "\t";
+      }
+      cout << endl;
+    }
+  }
+  return 0;
+}
