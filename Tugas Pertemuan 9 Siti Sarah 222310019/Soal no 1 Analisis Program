@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int hargaSetelahPajak(int hargaDasar) {
+  return hargaDasar + (hargaDasar * 10 / 100);
+}
+
+int main() 
+{
+  int hargaMawar = 10000;
+  int hargaFinalMawar = hargaSetelahPajak(hargaMawar);
+  cout << "Harga mawar 1 tangkai Rp." << hargaFinalMawar << endl;
+
+  return 0;
+}
+
+
+//Analisis Program diatas
+//Baris 1, disebut header. <iostream> adalah file header standar yang dipakai pada C++, sedangkan #include adalah perintah untuk memasukan file header <iostream> ke dalam program.
+//Baris 3, merupakan perintah untuk mendeklarasikan/memberitahukan kepada compiler bahwa kita akan menggunakan fungsi/class/file yang ada didalamnya.
+//Baris 5, merupakan deklarasi fungsi hargaSetelahPajak dengan variabel hargaDasar yang bertipe data integer.
+//Baris 6, merupakan proses perhitungan hargaDasar + (hargaDasar * 10 / 100), karena terdapat kata return maka hasil perhitungannya akan dikembalikan ke kode program yang memanggilnya.
+//Baris 9-16, merupakan fungsi utama.
+//Barus 11, merupakan deklarasi variabel hargaMawar yang diisi dengan angka 10000 yang bertipe data integer.
+//Baris 12, merupakan deklarasi variabel hargaFinalMawar yang diisi hasil dari pemanggilan fungsi hargaSetelahPajak(hargaMawar) yang bertipe data integer.
+//Baris 13, merupakan perintah untuk mencetak Harga Mawar 1 tangkai.
+//Baris 15, merupakan perintah yang menandakan bahwa kode telah selesai dieksekusi dengan exit code 0.
