@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  int *P;
+  P=new int;
+
+  *P=100;
+
+  cout<<"Nilai *P : "<<*P<<endl;
+  delete P;
+  return 0;
+}
+
+//Analisis Program Diatas
+//Baris 1, disebut header, <iostream> file header standar yang dipakai pada c++, sedangkan #include adalah perintah untuk memasukan file header <iostream> kedalam program
+//Baris 3, merupakan perintah untuk memberitahukan kpd compiler bahwa kita akan menggunakan fungsi, class, atau file yang terdapat pada memori namespace std;
+//Baris 5, merupakan fungsi utama
+//Baris 6, mendeklarasikan/inisialisasi variabel pointer yaitu Pointer P dengan tipe data integer
+//Baris 7, merupakan perintah untuk mengalokasikan memori
+//Baris 9, merupakan perintah untuk menggunakan memori yang telah dialokasikan
+//Baris 11, merupakan perintah untuk menghasilkan output berupa nilai
+//Baris 12, merupakan perintah untuk mendealokasikan memori
+//Baris 13, merupakan perintah yang menandakan bahwa kode telah selesai dieksekusi dengan exit code 0
